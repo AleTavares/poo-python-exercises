@@ -27,3 +27,4 @@ aluno.adicionar_nota(9.2)
 
 print(f"Média: {aluno.calcular_media()}")
 aluno.status()
+ 
