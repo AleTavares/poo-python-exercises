@@ -52,12 +52,11 @@ class Pessoa:
         return f"Nome: {self.nome}, CPF: {self.cpf}, Data de Nascimento: {self.data_nascimento}"
         
 class Funcionario(Pessoa):
-    def __init__(self, nome, cpf, data_nascimento, cargo, salario):
+    def __init__(self, nome, cpf, data_nascimento, cargo):
         super().__init__(nome, cpf, data_nascimento)
         self.cargo = cargo
-        self.salario = salario
-    def exibir_dados(self):
-        print(f"=== Dados do Funcionário ===\nNome: {self.nome}\nCPF: {self.cpf}\nData de Nascimento: {self.data_nascimento}\nCargo: {self.cargo}\nSalário: R$ {self.salario:.2f}")
+    def apresentar(self):
+        print(f"=== Dados do Funcionário ===\nNome: {self.nome}\nCPF: {self.cpf}\nData de Nascimento: {self.data_nascimento}\nCargo: {self.cargo}")
 
 class Tutor(Pessoa):
     def __init__(self, nome, cpf, data_nascimento, area_atuacao):
@@ -66,7 +65,24 @@ class Tutor(Pessoa):
     def apresentar(self):
         print(f"=== Dados do Tutor ===\nNome: {self.nome}\nCPF: {self.cpf}\nData de Nascimento: {self.data_nascimento}\nÁrea de Atuação: {self.area_atuacao}")
       
-
+class Curso:
+    def __init__ (self, nome, codigo, disciplinas: list[Disciplina] = []):
+      self.nome = nome
+      self.codigo = codigo
+      self.disciplinas = disciplinas
+      
+    def adicionar_disciplina(self, disciplina: Disciplina):
+      if len(self.disciplinas) >= 2:
+        self.disciplinas = []
+      self.disciplinas.append(disciplina)
+    
+    def listar_disciplinas(self):
+      for disciplina in self.disciplinas:
+        print(f"Disciplina: {disciplina.nome}\nCódigo: {disciplina.codigo}")
+        
+    def carga_horaria_total(self):
+      total = sum(disciplina.carga_horaria for disciplina in self.disciplinas)
+      return total
         
 aluno = Aluno("João Silva", "2023001", "Engenharia de Software")
 
@@ -93,11 +109,19 @@ prof.salario = -1000
 
 
 #---------------------------------------------------
-funcionario = Funcionario("Ana Souza", "123.456.789-00", "15/04/1985", "Gerente", 7000)
-funcionario.exibir_dados()
+funcionario = Funcionario("Ana Souza", "123.456.789-00", "15/04/1985", "Gerente")
+print(funcionario.apresentar())
 
 tutor = Tutor("Carlos Pereira", "987.654.321-00", "22/09/1990", "Matemática")
 print(tutor.apresentar())
 
 
 #---------------------------------------------------
+curso = Curso("Engenharia de Software", "ES101")
+disc1 = Disciplina("Programação", "CS101", 60)
+disc2 = Disciplina("Banco de Dados", "CS102", 80)
+curso.adicionar_disciplina(disc1)
+curso.adicionar_disciplina(disc2)
+curso.listar_disciplinas()
+total_carga = curso.carga_horaria_total()
+print(f"Carga horária total do curso: {total_carga} horas")
