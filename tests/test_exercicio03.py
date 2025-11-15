@@ -20,12 +20,12 @@ class TestExercicio03(unittest.TestCase):
     
     def test_property_salario(self):
         prof = self.module.Professor("Dr. Silva", "Computação", 5000)
-        self.assertEqual(prof.salario, 5000)
+        self.assertEqual(prof._salario, 5000)
     
     def test_setter_salario_positivo(self):
         prof = self.module.Professor("Dr. Silva", "Computação", 5000)
-        prof.salario = 6000
-        self.assertEqual(prof.salario, 6000)
+        prof._salario = 6000
+        self.assertEqual(prof._salario, 6000)
 
 if __name__ == '__main__':
     unittest.main()

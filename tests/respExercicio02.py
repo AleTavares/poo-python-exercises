@@ -19,10 +19,11 @@ class Aluno:
             print('reprovado')
         
 aluno1 = Aluno('João Silva', 2023001, 'Engenharia de Software')
-aluno1.adicionar_nota(10)
-aluno1.adicionar_nota(7)
-aluno1.adicionar_nota(8)
+aluno1.adicionar_nota(3)
+aluno1.adicionar_nota(3)
+aluno1.adicionar_nota(3)
 media = aluno1.calcular_media()
+print(aluno1.media)
 aluno1.status()
 
 
