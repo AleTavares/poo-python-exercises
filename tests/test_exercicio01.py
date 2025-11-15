@@ -29,5 +29,6 @@ class TestExercicio01(unittest.TestCase):
         self.assertEqual(disciplina.codigo, "POO001")
         self.assertEqual(disciplina.carga_horaria, 60)
 
+
 if __name__ == '__main__':
     unittest.main()
