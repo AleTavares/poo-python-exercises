@@ -2,7 +2,7 @@ class Pessoa:
     def __init__(self, nome, idade):
         self.nome = nome
         self.idade = idade
-        self.__cpf
+        self.__cpf = None
     
     def apresentar(self):
         return f"Olá, sou {self.nome}"
@@ -18,8 +18,10 @@ class Estudante(Pessoa):
             self.notas.append(nota)
     
     def calcular_media(self):
-        return sum(self.notas) / len(self.notas)  # Erro 6
-
+        # Evita divisão por zero quando não há notas registradas
+        if not self.notas:
+            return 0.0
+        return sum(self.notas) / len(self.notas)
 class Professor(Pessoa):
     def __init__(self, nome, idade, departamento, salario):
         super().__init__(nome, idade)
