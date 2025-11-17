@@ -218,7 +218,7 @@ python -m pytest tests/test_exercicio01.py -v
 # Para testar apenas o exercício 2
 python -m pytest tests/test_exercicio02.py -v
 
-python -m pytest tests/test_exercicio03.py -v
+python -m pytest tests/test_exercicio0.py -v
 ```
 
 #### Executando todos os testes
