@@ -32,3 +32,5 @@ Aluno: Maria Santos, Matrícula: 2023002, Curso: Ciência da Computação
 Disciplina: Programação Orientada a Objetos, Código: POO001, Carga Horária: 60h
 Disciplina: Banco de Dados, Código: BD001, Carga Horária: 80h
 ```
+
+
