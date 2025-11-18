@@ -374,4 +374,4 @@ Para dúvidas sobre os exercícios:
 
 ---
 
-**Bons estudos!**
+**Bons estudos!** Yuri
