@@ -2,7 +2,6 @@ class Pessoa:
     def __init__(self, nome, idade):
         self.nome = nome
         self.idade = idade
-        self.__cpf = None
     
     def apresentar(self):
         return f"Olá, sou {self.nome}"
@@ -37,4 +36,8 @@ professor = Professor("Dr. Silva", 45, "Computação", 8000)
 
 print(estudante.apresentar())
 print(professor.apresentar())
+
+estudante.adicionar_nota(8)
+estudante.adicionar_nota(7)
+
 print(f"Média do estudante: {estudante.calcular_media()}")  # Erro 7
