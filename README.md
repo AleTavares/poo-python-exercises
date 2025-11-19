@@ -11,16 +11,19 @@ Proporcionar aos estudantes uma experiência prática e progressiva dos conceito
 ### Fundamentos de POO
 
 #### Classes e Objetos
+
 - **Classe**: Um modelo ou template que define a estrutura e comportamento de objetos. É como um "molde" que especifica quais atributos (dados) e métodos (funções) os objetos terão.
 - **Objeto**: Uma instância específica de uma classe. É a materialização concreta do modelo definido pela classe.
 - **Instanciação**: O processo de criar um objeto a partir de uma classe usando o operador de chamada `()`.
 
 #### Construtores
+
 - **Método `__init__()`**: Método especial chamado automaticamente quando um objeto é criado. Responsável por inicializar os atributos do objeto.
 - **Parâmetros do Construtor**: Valores passados durante a criação do objeto para configurar seu estado inicial.
 - **Self**: Referência ao próprio objeto, usado para acessar atributos e métodos da instância.
 
 #### Atributos e Métodos
+
 - **Atributos de Instância**: Variáveis que pertencem a cada objeto específico, definidas com `self.atributo`.
 - **Atributos de Classe**: Variáveis compartilhadas por todas as instâncias da classe.
 - **Métodos de Instância**: Funções que operam sobre dados específicos de cada objeto.
@@ -30,17 +33,21 @@ Proporcionar aos estudantes uma experiência prática e progressiva dos conceito
 ### Encapsulamento
 
 #### Princípio do Encapsulamento
+
 O encapsulamento é um dos pilares fundamentais da POO que consiste em:
+
 - **Ocultar detalhes internos**: Proteger dados e implementação interna da classe
 - **Controlar acesso**: Definir como os dados podem ser acessados e modificados
 - **Manter integridade**: Garantir que o objeto sempre esteja em um estado válido
 
 #### Níveis de Visibilidade em Python
+
 - **Público**: Atributos e métodos acessíveis de qualquer lugar (`atributo`)
 - **Protegido**: Convenção para indicar uso interno, prefixo `_` (`_atributo`)
 - **Privado**: Dificultam acesso externo, prefixo `__` (`__atributo`)
 
 #### Properties e Getters/Setters
+
 - **@property**: Decorator que permite acessar métodos como se fossem atributos
 - **Getter**: Método para obter o valor de um atributo privado
 - **Setter**: Método para definir o valor de um atributo com validação
@@ -49,11 +56,13 @@ O encapsulamento é um dos pilares fundamentais da POO que consiste em:
 ### Herança
 
 #### Conceitos Fundamentais
+
 - **Classe Base (Pai/Superclasse)**: Classe que define características comuns
 - **Classe Derivada (Filha/Subclasse)**: Classe que herda e especializa a classe base
 - **Relação "é um"**: A herança representa uma relação hierárquica onde a subclasse "é um" tipo da superclasse
 
 #### Mecanismos de Herança
+
 - **Herança Simples**: Uma classe herda de apenas uma classe pai
 - **Herança Múltipla**: Uma classe herda de múltiplas classes pai (suportada em Python)
 - **Método super()**: Função que permite chamar métodos da classe pai
@@ -63,11 +72,13 @@ O encapsulamento é um dos pilares fundamentais da POO que consiste em:
 ### Polimorfismo
 
 #### Definição e Tipos
+
 - **Polimorfismo**: Capacidade de objetos de diferentes classes responderem à mesma interface de forma específica
 - **Polimorfismo de Sobrescrita**: Mesmo método implementado diferentemente em classes relacionadas por herança
 - **Polimorfismo de Interface**: Objetos não relacionados que implementam os mesmos métodos
 
 #### Benefícios do Polimorfismo
+
 - **Flexibilidade**: Código que funciona com diferentes tipos de objetos
 - **Extensibilidade**: Facilita adição de novos tipos sem modificar código existente
 - **Manutenibilidade**: Reduz acoplamento entre componentes do sistema
@@ -75,16 +86,19 @@ O encapsulamento é um dos pilares fundamentais da POO que consiste em:
 ### Relacionamentos entre Objetos
 
 #### Composição
+
 - **Definição**: Relacionamento "tem um" onde um objeto contém outros objetos como partes integrantes
 - **Ciclo de Vida**: Os objetos componentes dependem do objeto principal
 - **Exemplo**: Um Carro "tem um" Motor - se o carro é destruído, o motor também é
 
 #### Agregação
+
 - **Definição**: Relacionamento "usa um" onde objetos existem independentemente mas se referenciam
 - **Ciclo de Vida**: Os objetos podem existir separadamente
 - **Exemplo**: Um Professor "leciona para" Alunos - professor e alunos existem independentemente
 
 #### Relacionamentos N:N (Muitos para Muitos)
+
 - **Definição**: Múltiplos objetos de um tipo se relacionam com múltiplos objetos de outro tipo
 - **Implementação**: Geralmente usando listas ou conjuntos para armazenar referências
 - **Exemplo**: Alunos podem estar matriculados em várias Disciplinas, e cada Disciplina pode ter vários Alunos
@@ -92,12 +106,14 @@ O encapsulamento é um dos pilares fundamentais da POO que consiste em:
 ### Recursos Avançados
 
 #### Métodos de Classe (@classmethod)
+
 - **Propósito**: Métodos que operam sobre a classe, não sobre instâncias específicas
 - **Primeiro Parâmetro**: `cls` (referência à classe)
 - **Uso Comum**: Factory methods (métodos fábrica) para criar objetos de formas específicas
 - **Acesso**: Podem ser chamados tanto pela classe quanto por instâncias
 
 #### Métodos Estáticos (@staticmethod)
+
 - **Propósito**: Funções relacionadas à classe mas que não precisam acessar dados da classe ou instância
 - **Parâmetros**: Não recebem `self` nem `cls` automaticamente
 - **Uso Comum**: Funções utilitárias relacionadas ao domínio da classe
@@ -205,12 +221,14 @@ Todos os exercícios são baseados em entidades e situações de uma **escola de
 Antes de submeter sua solução, você pode executar os testes localmente para verificar se sua implementação está correta:
 
 #### Pré-requisitos
+
 ```bash
 # Instale as dependências
 pip install -r requirements.txt
 ```
 
 #### Executando um teste específico
+
 ```bash
 # Para testar apenas o exercício 1
 python -m pytest tests/test_exercicio01.py -v
@@ -220,17 +238,20 @@ python -m pytest tests/test_exercicio02.py -v
 ```
 
 #### Executando todos os testes
+
 ```bash
 # Executa todos os testes do projeto
 python -m pytest tests/ -v
 ```
 
 #### Interpretando a saída dos testes
+
 - **PASSED**: Teste passou - sua implementação está correta
 - **FAILED**: Teste falhou - verifique a mensagem de erro
 - **ERROR**: Erro de importação - verifique o nome do arquivo
 
 #### Exemplo de saída de teste bem-sucedido
+
 ```
 tests/test_exercicio01.py::test_aluno_creation PASSED
 tests/test_exercicio01.py::test_disciplina_creation PASSED
@@ -238,6 +259,7 @@ tests/test_exercicio01.py::test_aluno_attributes PASSED
 ```
 
 #### Exemplo de saída com erro
+
 ```
 tests/test_exercicio01.py::test_aluno_creation FAILED
 E   AttributeError: 'Aluno' object has no attribute 'nome'

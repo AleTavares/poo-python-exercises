@@ -1,12 +1,14 @@
 # Exercício 06 - Composição (Relacionamento "Tem Um")
 
 ## Objetivo
+
 Praticar o princípio da Composição, onde um objeto é feito de outros objetos.
 
 ## Descrição do Exercício
+
 Crie a classe **Curso** que será composta por objetos **Disciplina**.
 
-### Requisitos:
+### Requisitos
 
 1. Crie a classe **Curso** com atributos:
    - nome
@@ -22,9 +24,11 @@ Crie a classe **Curso** que será composta por objetos **Disciplina**.
 5. Adicione um método `carga_horaria_total()` que retorne a soma da carga horária de todas as disciplinas.
 
 ## Entrega
+
 Crie um arquivo chamado `respExercicio06.py` com a implementação das classes e demonstração da composição.
 
 ## Exemplo de Uso
+
 ```python
 curso = Curso("Engenharia de Software", "ES001")
 disciplina1 = Disciplina("Programação Orientada a Objetos", "POO001", 60)
@@ -37,6 +41,7 @@ print(f"Carga horária total: {curso.carga_horaria_total()}h")
 ```
 
 ## Exemplo de Saída Esperada
+
 ```
 === Disciplinas do Curso: Engenharia de Software ===
 - Programação Orientada a Objetos (POO001)
