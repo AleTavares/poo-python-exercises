@@ -6,8 +6,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 class TestExercicio02(unittest.TestCase):
     def setUp(self):
         try:
-            import respExercicio02
-            self.module = respExercicio02
+            import respostas.respExercicio02
+            self.module = respostas.respExercicio02
         except ImportError:
             self.fail("Arquivo respExercicio02.py não encontrado")
     
