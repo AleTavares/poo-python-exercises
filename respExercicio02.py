@@ -20,6 +20,7 @@ class Aluno:
         else:
             print("Reprovado")
 
+# Exemplo de uso
 aluno = Aluno("João Silva", "2023001", "Engenharia de Software")
 aluno.adicionar_nota(8.5)
 aluno.adicionar_nota(7.0)

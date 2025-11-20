@@ -23,12 +23,12 @@ Crie duas classes: **Aluno** e **Disciplina**.
 4. Instancie dois objetos de cada classe e imprima seus atributos.
 
 ## Entrega
-Crie um arquivo chamado `respExercicio01.py` com a implementação das classes e a criação dos objetos solicitados.
+Crie um arquivo chamado `respExercicio01.py` com a implementação das classes e a criação dos objetos solicios.
 
 ## Exemplo de Saída Esperada
 ```
 Aluno: João Silva, Matrícula: 2023001, Curso: Engenharia de Software
 Aluno: Maria Santos, Matrícula: 2023002, Curso: Ciência da Computação
-Disciplina: Programação Orientada a Objetos, Código: POO001, Carga Horária: 60h
+Disciplina: Programação Orientada a Objetos, Código: 1POO00, Carga Horária: 60h
 Disciplina: Banco de Dados, Código: BD001, Carga Horária: 80h
 ```
