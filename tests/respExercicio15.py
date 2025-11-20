@@ -15,7 +15,7 @@ class SMSService(ServicoNotificacao):
 
 class PushService(ServicoNotificacao):
     def enviar(self, mensagem):
-        print(f"Enviando SMS: {mensagem}")
+        print(f"Enviando Push: {mensagem}")
 
 class NotificacaoService:
     def __init__(self, servico: ServicoNotificacao):
