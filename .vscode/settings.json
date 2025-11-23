@@ -1,0 +1,15 @@
+{
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.supportAllPythonDocuments": true,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.indexing": true,
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.extraPaths": ["."],
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+},
+"editor.definitionLinkOpensInPeek": false
+}
