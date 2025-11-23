@@ -327,7 +327,7 @@ Os exercícios foram organizados em ordem crescente de complexidade:
 
 ## Testes Automáticos
 
-Cada exercício possui testes automatizados que verificam:
+Cada exercício possui tecleastes automatizados que verificam:
 
 - **Existência das classes** solicitadas
 - **Implementação dos métodos** obrigatórios
